@@ -4,12 +4,12 @@ import { markComplete } from '../../Redux/StudentSlice';
 
 function Dashboard() {
     const enrolledCourses = useSelector((state) => state.student.enrolledCourses);
-    const dispatch = useDispatch(); // Move the useDispatch hook declaration here
+    const dispatch = useDispatch(); 
 
     const markCompleted = (courseId) => {
-      // Implement logic to update the course status in your Redux store
+     
       console.log(`Mark course ${courseId} as completed`);
-      dispatch(markComplete(courseId)); // Dispatch the action creator with the payload
+      dispatch(markComplete(courseId)); 
     };
 
     return (
